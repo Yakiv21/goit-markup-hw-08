@@ -1,0 +1,44 @@
+%logo-setting {
+    color: $title-text-color;
+    font-family: Raleway;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
+}
+
+%link {
+    text-decoration: none;
+}
+
+%button {
+    color: $white-color;
+    background-color: $accent-color;
+    font-family: inherit;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+  
+    min-width: 200px;
+  
+    cursor: pointer;
+}
+
+%container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  %section {
+    padding-top: 95px;
+    padding-bottom: 95px;
+  }
+
+  %feature-list {
+    display: flex;
+    flex-wrap: wrap;
+}

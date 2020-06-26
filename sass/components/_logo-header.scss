@@ -1,0 +1,8 @@
+.logo {
+    @extend %logo-setting;
+    margin-right: 85px;   
+  }
+
+  .web-logo {
+    color: $accent-color;
+  }

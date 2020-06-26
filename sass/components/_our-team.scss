@@ -1,0 +1,98 @@
+.section {
+    @extend %section;
+
+    &.team {
+        background-color: $bg-team-color;
+    }
+}
+
+.item-team {
+    width: 270px;
+
+    .feature-list > & {
+        text-align: center;
+    }
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.card {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    overflow: hidden;
+  
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2),
+     0px 1px 1px rgba(0, 0, 0, 0.14),
+     0px 1px 3px rgba(0, 0, 0, 0.12);
+  }
+
+  .card-content {
+    background: $white-color;
+    border-right: 1px solid $white-color;
+    border-bottom: 1px solid $white-color;
+    border-left: 1px solid $white-color;
+    box-sizing: border-box;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 30px 31px 24px 32px;
+  }
+
+  .name-title {
+    color: $title-text-color;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+  
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .profession {
+    color: $primery-text-color;
+    font-size: 16px;
+    line-height: 1.19;
+  
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+
+  .social {
+    display: flex;
+  }
+
+  .social-link {
+    display: flex;
+    border: none;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    justify-content: center;
+    align-items: center;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+        fill: $white-color;
+    }
+    
+}
+
+  .icon-link {
+    fill: $social-color;
+  
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .social-link:hover &,
+    .social-link:focus & {
+        fill: $white-color;
+    }
+  }
+
+  .social-item:not(:last-child) {
+    margin-right: 10px;
+}
