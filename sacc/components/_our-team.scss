@@ -1,34 +1,55 @@
 .section {
-    @extend %section;
-
     &.team {
         background-color: $bg-team-color;
     }
 }
 
+/*@media screen and (min-width: 768px) {
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+}*/
+
+.feature-list-team {
+    @extend %list;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
+}
+
 .item-team {
-    width: 270px;
-
-    .feature-list > & {
-        text-align: center;
+    @media screen and (max-width: 767px) {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
     }
 
-    &:not(:last-child) {
-        margin-right: 30px;
-    }
+    @media screen and (min-width: 768px) {
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+
+}
+
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 4 * 30px) / 4);
+        margin: 15px;}
+
+    
 }
 
 .card {
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     overflow: hidden;
-  
-    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2),
-     0px 1px 1px rgba(0, 0, 0, 0.14),
-     0px 1px 3px rgba(0, 0, 0, 0.12);
-  }
 
-  .card-content {
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.card-content {
     background: $white-color;
     border-right: 1px solid $white-color;
     border-bottom: 1px solid $white-color;
@@ -37,6 +58,8 @@
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
     padding: 30px 31px 24px 32px;
+
+    text-align: center;
   }
 
   .name-title {
@@ -47,7 +70,7 @@
   
     margin-top: 0;
     margin-bottom: 10px;
-  }
+  }  
 
   .profession {
     color: $primery-text-color;
@@ -59,10 +82,20 @@
   }
 
   .social {
-    display: flex;
+      @extend %list;
+
+      display: flex;
+
+      justify-content: center;
   }
 
-  .social-link {
+  .social-item {
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+
+.social-link {
     display: flex;
     border: none;
     width: 44px;
@@ -72,6 +105,7 @@
     justify-content: center;
     align-items: center;
 
+    
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
@@ -79,10 +113,9 @@
         background-color: $accent-color;
         fill: $white-color;
     }
-    
 }
 
-  .icon-link {
+.icon-link {
     fill: $social-color;
   
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -92,7 +125,3 @@
         fill: $white-color;
     }
   }
-
-  .social-item:not(:last-child) {
-    margin-right: 10px;
-}

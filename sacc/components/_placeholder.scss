@@ -1,13 +1,20 @@
 %logo-setting {
     color: $title-text-color;
     font-family: Raleway;
-    font-size: 26px;
+    font-size: 24px;
     line-height: 1.2;
     text-decoration: none;
 }
 
+%list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
 %link {
-    text-decoration: none;
+  text-decoration: none;
+  color: currentColor;
 }
 
 %button {
@@ -26,7 +33,6 @@
 }
 
 %container {
-    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -34,11 +40,17 @@
   }
 
   %section {
-    padding-top: 95px;
-    padding-bottom: 95px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
-  %feature-list {
-    display: flex;
-    flex-wrap: wrap;
+%section-title {
+    color: $title-text-color;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 50px;
 }
