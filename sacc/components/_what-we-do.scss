@@ -1,22 +1,26 @@
 .section-line  {
     @extend %section;
+    display: none;
 
         border-top: 1px solid #ececec;
         width: 1200px;
         margin-left: auto;
         margin-right: auto;
 
-        @media screen and (max-width: 1199px) {
-            display: none;
-        }
-
         @media screen and (min-width: 1200px) {
+            width: 1600px;
             display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
 }
 
 .section-title {
     @extend %section-title;
+
+    @media screen and (min-width:1200px) {
+        font-size: 36px;
+    }
 }
 
 .feature-list {

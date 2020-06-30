@@ -1,0 +1,59 @@
+.address-footer {
+    @media screen and (min-width:1200px) {
+        text-align: start;    
+    }
+}
+
+.logo-alternative {
+    color: $white-color;
+    @extend %logo-setting;
+}
+
+.address-bottom {
+    margin-top: 20px;
+}
+
+.text-address {
+    color: $white-color;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    margin-top: 0;
+    margin-bottom: 0;
+    letter-spacing: 0.03em;
+}
+
+.address-list {
+    @extend %list;
+
+}
+
+.footer-address {
+    @extend %link;
+    
+    display: inline-block;
+
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.71;
+    color: $footer-text-color;
+
+    margin-top: 8px;
+}
+
+.block-address {
+    @media screen and (min-width:768px) {
+        display: flex;
+        justify-content: space-around;
+
+        margin-bottom: 60px;
+    }
+
+    @media screen and (min-width:1200px) {
+        width: 506px;
+        justify-content: space-between;
+        
+        margin-bottom: 0;
+    }
+
+}

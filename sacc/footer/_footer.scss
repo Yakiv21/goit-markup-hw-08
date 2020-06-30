@@ -1,0 +1,30 @@
+.footer {
+    background-color: $bg-footer;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+
+    @media screen and (min-width:480px) {
+        width: 480px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    @media screen and (min-width:768px) {
+        width: 768px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    @media screen and (min-width:1200px) {
+        width: 1600px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@import "./address-footer";
+@import "./join";
+@import "./subscription";
+@import "./container_footer";
+
