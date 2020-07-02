@@ -17,6 +17,10 @@ img {
   margin-right: auto;
 }
 
+footer {
+  color: black;
+}
+
 /*.section {
     @media screen and (max-width: 1199px) {
       padding-top: 60px;
@@ -161,7 +165,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .page-header {
-    width: 1600px;
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -179,6 +183,7 @@ img {
 .menu-container {
   background-color: #ffffff;
   text-align: center;
+  z-index: 999;
 }
 
 @media screen and (max-width: 767px) {
@@ -402,7 +407,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .hero {
-    width: 1600px;
+    width: 1200px;
   }
 }
 
@@ -816,7 +821,7 @@ textarea {
 
 @media screen and (min-width: 1200px) {
   .section-line {
-    width: 1600px;
+    width: 1200px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -886,7 +891,7 @@ textarea {
 
 @media screen and (min-width: 1200px) {
   .section {
-    width: 1600px;
+    width: 1200px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -1081,30 +1086,6 @@ textarea {
   padding-top: 60px;
   padding-bottom: 60px;
   text-align: center;
-}
-
-@media screen and (min-width: 480px) {
-  .footer {
-    width: 480px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .footer {
-    width: 768px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .footer {
-    width: 1600px;
-    margin-right: auto;
-    margin-left: auto;
-  }
 }
 
 @media screen and (min-width: 1200px) {

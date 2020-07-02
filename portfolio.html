@@ -13,44 +13,67 @@
 </head>
 <body>
     <!--Шапка файлу-->
-    <header class="page-header-portfolio">
-        <div class="container nav">
-            <a href="" class="logo">
-                <span class="web-logo">Web</span> Studio
-            </a>
-
-            <ul class="site-nav list">
-                <li class="item"><a href="./index.html" class="site-nav-link link">Студия</a></li>
-                <li class="item"><a href="./portfolio.html" class="site-nav-link link current">Портфолио</a></li>
-                <li class="item"><a href="" class="site-nav-link link">Контакты</a></li>
-            </ul>
-            <ul class="address list">
+    <header class="page-header">
+        <nav class="container nav">
+          <a href="" class="logo"> <span class="web-logo">Web</span> Studio </a>
+          <button
+            type="button"
+            class="menu-button"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button>
+            <svg 
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню">
+              <use class="icon-cross" href="./images/sprite.svg#cross"></use>
+              <use class="icon-menu" href="./images/sprite.svg#menu"></use>
+            </svg>
+          </button>
+          <div class="menu-container" id="menu-container" data-menu>
+            <div class="navigation">
+              <ul class="site-nav">
+                <li class="item">
+                  <a href="./index.html" class="site-nav-link link">Студия</a>
+                </li>
+                <li class="item">
+                  <a href="./portfolio.html" class="site-nav-link link current">Портфолио</a>
+                </li>
+                <li class="item">
+                  <a href="" class="site-nav-link link">Контакты</a>
+                </li>
+              </ul> 
+            </div>
+            <div class="contacts">
+              <ul class="address list">
                 <li class="item-address">
                   <a href="mailto:info@devstudio.com" class="address-link link">
                     <svg class="icon" width="16px" height="11.2px">
                       <use href="./images/sprite.svg#envelope"></use>
                     </svg>
-                    info@devstudio.com
+                      info@devstudio.com
                   </a>
                 </li>
                 <li class="item-address">
                   <a href="tel:+380961111111" class="address-link link">
                     <svg class="icon" width="10px" height="14.97px">
-                      <use href="./images/sprite.svg#Phone"></use>
+                    <use href="./images/sprite.svg#Phone"></use>
                     </svg>
-                    +38 096 111 11 11
+                      +38 096 111 11 11
                   </a>
                 </li>
-              </ul>
-        </div>
-    </header>
-    <!-- main -->
+              </ul>            
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- main -->
     <main>
         <!--Hero-->
         <section class="hero-portfolio">
-            <div class="container list-portfolio">
+            <div class="list-portfolio">
                 <h1 class="title-portfolio">Работы студии</h1>
-                <ul class="hero-button list">
+                <ul class="hero-button">
                    <li class="item-button"><button type="button" class="button-hero">Все</button></li>
                    <li class="item-button"><button type="button" class="button-hero">Веб-сайты</button></li>
                    <li class="item-button"><button type="button" class="button-hero">Приложения</button></li>
@@ -62,7 +85,7 @@
         <!--</section>--> 
         <!-- Что было сделано -->
         <!--<section class="section portfolio">--> 
-            <div class="container portfolio">
+            <div class="portfolio">
                 <h2 class="title-portfolio">Что было сделано</h2>
                 <ul class="feature-list list">
                     <li class="item-portfolio">
@@ -220,7 +243,8 @@
     <!--Футтер-->
     <footer class="footer">
         <div class="container container-footer">
-          <div class="address-footer">
+          <div class="block-address">
+                    <div class="address-footer">
             <a href="./index.html" class="logo-alternative"><span class="web-logo">Web</span> Studio</a>
             <address class="address-bottom">
               <p class="text-address">г. Киев, пр-т Леси Украинки, 26</p>
@@ -272,6 +296,8 @@
               </li>
             </ul>
           </div>
+          </div>
+  
           <div class="subscription">
             <b class="call">Подпишитесь на рассылку</b>
             
@@ -287,10 +313,11 @@
                     </svg>
                 </button>
               </div>
-  
             </form>
           </div>
         </div>
-      </footer>
+    </footer>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
