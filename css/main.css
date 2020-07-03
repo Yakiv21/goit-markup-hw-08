@@ -21,17 +21,6 @@ footer {
   color: black;
 }
 
-/*.section {
-    @media screen and (max-width: 1199px) {
-      padding-top: 60px;
-      padding-bottom: 60px; 
-    }
-
-    @media screen and (min-width: 1200px) {
-      padding-top: 94px;
-      padding-bottom: 94px;
-    }
-}*/
 .logo, .logo-alternative {
   color: #212121;
   font-family: Raleway;
@@ -391,24 +380,6 @@ footer {
   margin-left: auto;
   margin-right: auto;
   background-repeat: no-repeat;
-}
-
-@media screen and (min-width: 480px) {
-  .hero {
-    width: 480px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .hero {
-    width: 768px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .hero {
-    width: 1200px;
-  }
 }
 
 .container-hero {
