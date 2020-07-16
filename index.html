@@ -123,7 +123,6 @@
       </div>
       <!---Герой-->
       <section class="hero">
-
         <div class="container-hero">
           <h1 class="hero-title">эффективные решения для вашего бизнеса</h1>
           <button class="button" data-modal-open>Заказать услугу</button>
@@ -218,7 +217,21 @@
           <ul class="feature-list-team">
             <li class="item-team">
                 <div class="card">
-                    <img src="./images/john-smith.jpg" alt="John Smith" class="comand-img"/>
+                    <picture>
+                      <source srcset="./images/john-smith270.jpg 354w, 
+                      ./images/john-smith270@2x.jpg 708w" type="image/jpeg"
+                      media="(min-width: 1200px)">
+                      <source srcset="./images/john-smith354.jpg 354w, 
+                      ./images/john-smith354@2x.jpg 708w" type="image/jpeg"
+                      media="(min-width: 768px)">
+                      <source srcset="./images/john-smith450.jpg 450w, 
+                      ./images/john-smith450@2x.jpg 900w" type="image/jpeg"
+                      media="(max-width: 768px)">
+
+                    <img src="./images/john-smith.jpg"                     
+                    alt="John Smith" class="comand-img"/>                      
+                    </picture>
+
                     <div class="card-content">
                         <h3 class="name-title">Николай Кучеренко</h3>
                         <p class="profession">Product Designer</p>
@@ -257,7 +270,21 @@
             </li>
             <li class="item-team">
               <div class="card">
-                <img src="./images/marta-stewart.jpg" alt="Marta Stewart" class="comand-img"/>
+                <picture>
+                  <source srcset="./images/marta-stewart270.jpg 354w, 
+                  ./images/marta-stewart270@2x.jpg 708w" type="image/jpeg"
+                  media="(min-width: 1200px)">
+                  <source srcset="./images/marta-stewart354.jpg 354w, 
+                  ./images/marta-stewart354@2x.jpg 708w" type="image/jpeg"
+                  media="(min-width: 768px)">
+                  <source srcset="./images/marta-stewart450.jpg 450w, 
+                  ./images/marta-stewart450@2x.jpg 900w" type="image/jpeg"
+                  media="(max-width: 768px)">
+
+                <img src="./images/marta-stewart.jpg"                     
+                alt="Marta Stewart" class="comand-img"/>                      
+                </picture>
+                <!-- <img src="./images/marta-stewart.jpg" alt="Marta Stewart" class="comand-img"/> -->
                 <div class="card-content">
                   <h3 class="name-title">Ольга Иванова</h3>
                   <p class="profession">Frontend Developer</p>
@@ -296,11 +323,25 @@
             </li>
             <li class="item-team">
               <div class="card">
-                <img
+                <picture>
+                  <source srcset="./images/robert-jakis270.jpg 354w, 
+                  ./images/robert-jakis270@2x.jpg 708w" type="image/jpeg"
+                  media="(min-width: 1200px)">
+                  <source srcset="./images/robert-jakis354.jpg 354w, 
+                  ./images/robert-jakis354@2x.jpg 708w" type="image/jpeg"
+                  media="(min-width: 768px)">
+                  <source srcset="./images/robert-jakis450.jpg 450w, 
+                  ./images/robert-jakis450@2x.jpg 900w" type="image/jpeg"
+                  media="(max-width: 768px)">
+
+                <img src="./images/robert-jakis.jpg"                     
+                alt="Marta Stewart" class="comand-img"/>                      
+                </picture>
+                <!-- <img
                   src="./images/robert-jakis.jpg"
                   alt="Robert Jakis"
                   class="comand-img"
-                />
+                /> -->
                 <div class="card-content">
                   <h3 class="name-title">Андрей Шевченко</h3>
                   <p class="profession">Marketing</p>
@@ -339,7 +380,21 @@
             </li>
             <li class="item-team">
               <div class="card">
-                <img src="./images/martin-doe.jpg" alt="Martin Doe" class="comand-img"/>
+                <picture>
+                  <source srcset="./images//martin-doe270.jpg 1x, 
+                  ./images//martin-doe270@2x.jpg 2x" type="image/jpeg"
+                  media="(min-width: 1200px)">
+                  <source srcset="./images//martin-doe354.jpg 354w, 
+                  ./images//martin-doe354@2x.jpg 708w" type="image/jpeg"
+                  media="(min-width: 768px)">
+                  <source srcset="./images//martin-doe450.jpg 450w, 
+                  ./images//martin-doe450@2x.jpg 900w" type="image/jpeg"
+                  media="(max-width: 768px)">
+
+                <img src="./images/martin-doe.jpg"                     
+                alt="Marta Stewart" class="comand-img"/>                      
+                </picture>
+                <!-- <img src="./images/martin-doe.jpg" alt="Martin Doe" class="comand-img"/> -->
                 <div class="card-content">
                   <h3 class="name-title">Иван Николаев</h3>
                   <p class="profession">UI Designer</p>

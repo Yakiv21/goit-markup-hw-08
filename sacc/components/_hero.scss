@@ -1,34 +1,72 @@
 .hero {
     background-color: $bg-hero-color;
-    background-image: linear-gradient(to right, $bg-hero-color,$bg-hero-color),
-      url(../images/Header-img.jpg);
-  
+
+
     max-width: 1600px;
     max-height: 600px;
     margin-left: auto;
     margin-right: auto;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
+    
+
+    @media screen and (max-width: 480px) {
+      background-image: linear-gradient(to right, $bg-hero-color,$bg-hero-color), 
+      url(../images/Header480.jpg);
+      // max-width: 480px;
+
+      @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      .box {
+        background-image: url('Header480@2x.jpg');
+      }
+    }
   }
 
-    // @media screen and (min-width: 480px) {
-    //   width: 480px; 
-    //   } 
+  @media screen and (min-width: 481px), screen and (max-width: 768px) {
+    background-image: linear-gradient(to right, $bg-hero-color,$bg-hero-color), 
+    url(../images/Header768.jpg);
+    // width: 768px;
 
-    //   @media screen and (min-width: 768px) {
-    //     width: 768px; 
-    //     } 
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .box {
+      background-image: url('Header768@2x.jpg');
+    }
+  }
+}
 
-    // @media screen and (min-width: 1200px) {
-    //   width: 1200px; 
-
+@media screen and (min-width: 769px) {
+  background-image: linear-gradient(to right, $bg-hero-color,$bg-hero-color), 
+  url(../images/Header1200.jpg);
+  // min-width: 1200px;
+  @media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .box {
+    background-image: url('Header1200@2x.jpg');
+  }
+}
+}
+}
 
 .container-hero {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 
-  padding-top: 200px;
-  padding-bottom: 200px;
+  @media screen and (max-width: 1199px) {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 
   button {
       @extend %button;
